@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var car = {
+      //     color: 'red',
+      // };
+      // console.log(car);
+
+      //   var car = new Object();
+      //   car.color = 'red';
+      //   car.height = 1.8;
+      //   console.log(car);
+
+      //   function Factory(color, height, suv) {
+      //     this.color = color;
+      //     this.height = height;
+      //     this.suv = suv;
+      //   }
+      //   var car1 = new Factory('red', 1.8, true);
+      //   var car2 = new Factory('white', 1.9, false);
+      //   console.log(car1, car2);
+
+      //   function Car(name, price, size) {
+      //     this.name = name;
+      //     this.price = price;
+      //     this.size = size;
+      //   }
+
+      //   var benz = new Car('benz', '40w', 'big');
+      //   console.log(benz);
+
+      function Car(obj) {
+        this.name = obj.name;
+        this.price = obj.price;
+        this.size = obj.size;
+      }
+
+      var audi = new Car({ size: 'small', name: 'audi', price: '30w' });
+      console.log(audi);
+    </script>
+  </body>
+</html>

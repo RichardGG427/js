@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <script>
+          // var name = '张三，李四，小明，小红';
+          // var num = name.indexOf('李四');
+          //   console.log(num);
+          // var newname1 = name.slice(0,num);
+          // var newname2 = name.slice(num+3,11);
+          // console.log(newname1)
+          // console.log(newname2);
+          // var newname= newname1 + newname2;
+          // console.log(newname);
+          // var list = newname.split(',');
+          // console.log(list);
+
+          var str = '张三，李四，小明，小红';
+          var list = str.split('，');
+          console.log(list);
+          var index = list.indexOf('李四');
+          console.log(index);
+          list.splice(index, 1);
+          console.log(list);
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
