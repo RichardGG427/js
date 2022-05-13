@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      list = [7, 3, 6, 5, 4, 1, 2, 9, 8, 13, 10, 12, 11];
+      //   list.sort(function (a,b){
+      //       return a-b;
+      //   });
+      //   console.log(list);
+
+      // function sorts(list) {
+      //     list.sort(function(a,b){
+      //         return a-b;
+      //     })
+      //     return list;
+      // }
+      // console.log(sorts(list));
+
+      //   for (var i = 0; i < list.length; i++) {
+
+      //     for (var j = i; j < list.length; j++) {
+      //       if (list[i] > list[j]) {
+      //         var a = list[i];
+      //         list[i] = list[j];
+      //         list[j] = a;
+      //       }
+      //     }
+      //   }
+      //   console.log(list);
+
+      //选择排序
+        function bubble() {
+          for (var i = 0; i < list.length-1; i++) {
+            for (var j = i+1; j < list.length; j++) {
+              if (list[i] > list[j]) {
+                var a = list[i];
+                list[i] = list[j];
+                list[j] = a;
+              }
+            }
+          }
+          return list;
+        }
+        console.log(bubble(list));
+
+      //冒泡排序
+    //   function bubble() {
+    //     for (var i = 0; i < list.length - 1; i++) {
+    //       for (var j = 0; j < list.length - i - 1; j++) {
+    //         if (list[j] > list[j + 1]) {
+    //           var a = list[j];
+    //           list[j] = list[j + 1];
+    //           list[j + 1] = a;
+    //         }
+    //       }
+    //     }
+    //     return list;
+    //   }
+    //   console.log(bubble(list));
+    </script>
+  </body>
+</html>
